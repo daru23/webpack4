@@ -1,0 +1,40 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "webpack4 test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/webpack/bin/webpack --mode development",
+    "dev-noconfig": "node ./node_modules/webpack/bin/webpack --mode development --module-bind js=babel-loader",
+    "build-noconfig": "node ./node_modules/webpack/bin/webpack --mode production --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daru23/webpack4.git"
+  },
+  "keywords": [
+    "webpack4",
+    "example",
+    "reactjs"
+  ],
+  "author": "Daniela Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daru23/webpack4/issues"
+  },
+  "homepage": "https://github.com/daru23/webpack4#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
